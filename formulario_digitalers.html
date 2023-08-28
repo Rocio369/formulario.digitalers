@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulario de Registracion - Rocio Alina Quiroga - 807768</title>
+    <!---Para darle estilo en el archivo CSS--->
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Formulario de Registracion</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Nombre completo</label>
+          <input type="text" placeholder="Ingrese su nombre completo" required />
+        </div>
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Ingrese su email" required />
+        </div>
+        <div class="input-box">
+            <label>Contraseña</label>
+            <input type="text" placeholder="Ingrese su contraseña" required />
+          </div>
+          <div class="input-box">
+            <label>Confirme su contraseña</label>
+            <input type="text" placeholder="Ingrese contraseña" required />
+          </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Numero de celular</label>
+            <input type="number" placeholder="Ingrese su numero de celular" required />
+          </div>
+          <div class="input-box">
+            <label>Fecha de Nacimiento</label>
+            <input type="date" placeholder="Ingrese su fecha de nacimiento" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Genero</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Masculino</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Femenino</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Otro</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Direccion</label>
+          <input type="text" placeholder="Introduzca su direcion" required />
+          <input type="text" placeholder="Introduzca una segunda direccion" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Nacionalidad/Pais Nativo</option>
+                <option>Argentina</option>
+                <option>Chile</option>
+                <option>Bolivia</option>
+                <option>Brasil</option>
+                <option>Uruguay</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Ingrese su provincia" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Ingrese su localidad" required />
+            <input type="number" placeholder="Ingrese su codigo postal" required />
+          </div>
+        </div>
+        <button>Registrar</button>
+      </form>
+    </section>
+  </body>
+</html>
